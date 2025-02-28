@@ -87,7 +87,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <a href="../index.html"> Home </a>
             <!-- <a href=""> Category </a> -->
             <a href=""> Cart </a>
-            <a href="../user/formlogin.html"> Login </a>
+            <a href="../user/formlogin.php"> Login </a>
         </nav>
     </header>
 

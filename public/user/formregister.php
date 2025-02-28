@@ -11,10 +11,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST['email'];
     $password = $_POST['password'];
 
-    // Hash password untuk keamanan
     $password_hashed = password_hash($password, PASSWORD_BCRYPT);
 
-    // Cek apakah email sudah digunakan
     $sql_check = "SELECT * FROM users WHERE email = ?";
     $stmt_check = $conn->prepare($sql_check);
     $stmt_check->bind_param("s", $email);
@@ -24,13 +22,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($result_check->num_rows > 0) {
         $error = "Email sudah terdaftar, silakan gunakan email lain!";
     } else {
-        // Insert data ke database
+    
         $sql = "INSERT INTO users (username, email, password_id) VALUES (?, ?, ?)";
         $stmt = $conn->prepare($sql);
         $stmt->bind_param("sss", $username, $email, $password_hashed);
 
         if ($stmt->execute()) {
-            header("Location: formlogin.php"); // Redirect ke halaman login
+            header("Location: formlogin.php");
             exit();
         } else {
             $error = "Pendaftaran gagal, coba lagi!";
