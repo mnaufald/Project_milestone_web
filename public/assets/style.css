@@ -1,0 +1,168 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgb(12, 49, 117);
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    position: sticky;
+}
+
+footer {
+    background-color: rgb(9, 32, 75);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    padding-bottom: 1%;
+    padding-top: 3%;
+}
+
+a:link {
+    padding: 5px;
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgba(224, 224, 224, 0.904);
+    font-size: 2px;
+}
+
+a:hover {
+    color: rgb(255, 255, 255);
+}
+
+a:active {
+    color: rgb(129, 129, 129);
+}
+
+li {
+    list-style-type: none;
+}
+
+.column.footerleft {
+    width: 50%;
+}
+
+.column.footerright {
+    width: 50%;
+}
+
+.column {
+    float: left;
+    padding: 1px;
+}
+
+
+/*  */
+
+.container {
+    padding: 3%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+.product {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+.product img {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+}
+.price {
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+.text-product {
+    font-size: 17px;
+}
+
+a:link .text-product{
+    padding: 5px;
+    text-decoration: none;
+}
+
+a:visited .text-product {
+    color: rgba(0, 0, 0, 0.904);
+    font-size: 2px;
+}
+
+a:hover .text-product {
+    color: rgb(46, 89, 182);
+}
+
+a:active .text-product {
+    color: rgb(46, 89, 182);
+}
+
+
+/*  */
+
+/* product */
+/*
+.container {
+    display: flex;
+    gap: 20px;
+}
+
+.product-image img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.product-info {
+    max-width: 400px;
+}
+
+.price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+.color-options button {
+    margin: 5px;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    background-color: white;
+    cursor: pointer;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+ .btn:hover {
+    color: rgb(0, 0, 0);
+}
+
+.btn {
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.add-to-cart {
+    background-color: blue;
+}
+
+.buy {
+    background-color: orange;
+} 
+*/
+
+/*  */
